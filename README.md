@@ -2,218 +2,218 @@
 
 # RAJA GOPAL S
 
-### AI / ML ENGINEER | GENERATIVE AI | AGENTIC AI
+### AI / ML ENGINEER
 
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=18&duration=2500&pause=700&color=00F7FF&center=true&vCenter=true&width=750&lines=Engineering+Intelligent+Systems;Building+Agentic+AI+Workflows;Exploring+LLMs+%26+RAG+Architectures;Computer+Vision+%7C+Deep+Learning;From+Models+to+Autonomous+Systems" />
+**GENERATIVE AI · AGENTIC AI · COMPUTER VISION**
+
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=16&duration=2500&pause=800&color=00F7FF&center=true&vCenter=true&width=650&lines=Building+Intelligent+AI+Systems;Engineering+Autonomous+AI+Agents;LLMs+%7C+RAG+%7C+Multi-Agent+Systems;Turning+Ideas+Into+Production+AI" />
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-00D9FF?style=flat-square\&logo=vercel\&logoColor=white)](https://portfolio-flame-ten-86.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square\&logo=linkedin)](https://www.linkedin.com/in/raja-gopal-638bba201)
+[![GitHub](https://img.shields.io/badge/GitHub-Explore-181717?style=flat-square\&logo=github)](https://github.com/YOUR_GITHUB_USERNAME)
+
+📍 India
+
+</div>
+
+---
+
+### ◈ ENGINEERING OVERVIEW
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**IDENTITY**
+
+```yaml
+Role: ML Engineer
+Organization: Avani
+Experience: 1+ Year
+Location: India
+
+Focus:
+  - Generative AI
+  - Agentic AI
+  - LLM Applications
+  - Computer Vision
+  - Deep Learning
+```
+
+</td>
+<td width="50%" valign="top">
+
+**ENGINEERING PHILOSOPHY**
+
+Building intelligent systems that can:
+
+* Understand context
+* Retrieve knowledge
+* Reason over tasks
+* Execute workflows
+* Integrate external tools
+
+`PERCEIVE → REASON → ACT`
+
+</td>
+</tr>
+</table>
+
+---
+
+### ◈ LIVE ENGINEERING METRICS
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&hide_title=true&include_all_commits=true" height="155"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true&hide_title=true&langs_count=8" height="155"/>
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-00F7FF?style=for-the-badge\&logo=vercel\&logoColor=black)](https://portfolio-flame-ten-86.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/raja-gopal-638bba201)
-[![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/Rajagopalhertzian)
-
-📍 India 🇮🇳
+![Profile Views](https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME\&color=00d9ff\&style=flat-square\&label=PROFILE+VIEWS)
 
 </div>
 
 ---
 
-## `01 / SYSTEM_IDENTITY`
+### ◈ TECHNOLOGY ECOSYSTEM
 
-```yaml
-name: Raja Gopal S
-designation: Machine Learning Engineer
-organization: Avani
-location: India
+<table>
+<tr>
+<td width="50%" valign="top">
 
-engineering_domains:
-  - Generative AI
-  - Agentic AI
-  - Large Language Models
-  - Retrieval Augmented Generation
-  - Computer Vision
-  - Deep Learning
-
-engineering_focus:
-  - Autonomous AI Workflows
-  - Multi-Agent Systems
-  - Intelligent Applications
-  - Model Development
-  - AI Deployment & Optimization
-
-philosophy: "Perceive → Reason → Act → Evolve"
-```
-
-I build intelligent systems at the intersection of Machine Learning, Generative AI, and autonomous AI engineering.
-
-My interests span LLM applications, RAG architectures, agentic workflows, computer vision, and production-oriented AI systems.
-
-I focus on transforming AI research and experimentation into practical, scalable engineering solutions.
-
----
-
-## `02 / LIVE_ENGINEERING_METRICS`
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Rajagopalhertzian&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" width="49%" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rajagopalhertzian&layout=compact&theme=tokyonight&hide_border=true&langs_count=10" width="49%" />
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=Rajagopalhertzian&theme=tokyonight&hide_border=true" width="75%" />
-
-</div>
-
----
-
-## `03 / REPOSITORY_INTELLIGENCE`
-
-### Live Repository Explorer
-
-Repositories, project descriptions, programming languages, stars and forks are maintained by GitHub itself.
-
-<div align="center">
-
-[![Repositories](https://img.shields.io/badge/EXPLORE_ALL_PROJECTS-GitHub-181717?style=for-the-badge\&logo=github)](https://github.com/Rajagopalhertzian?tab=repositories)
-
-</div>
-
-<!-- REPO-TRACKER:START -->
-
-| METRIC                | SOURCE                                                                          |
-| --------------------- | ------------------------------------------------------------------------------- |
-| Public repositories   | [GitHub Repositories](https://github.com/Rajagopalhertzian?tab=repositories) |
-| Programming languages | [GitHub Languages](https://github.com/Rajagopalhertzian?tab=repositories)    |
-| Project activity      | [GitHub Contributions](https://github.com/Rajagopalhertzian?tab=overview)    |
-| Stars and forks       | Individual repository statistics                                                |
-
-<!-- REPO-TRACKER:END -->
-
----
-
-## `04 / TECHNOLOGY_INTELLIGENCE`
-
-### Generative AI & Agentic AI
+**01 / GENERATIVE & AGENTIC AI**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square\&logo=huggingface\&logoColor=black)
-![LLM](https://img.shields.io/badge/LLMs-8A2BE2?style=flat-square)
-![RAG](https://img.shields.io/badge/RAG-00A67E?style=flat-square)
-![MCP](https://img.shields.io/badge/MCP-444444?style=flat-square)
 
-* Large Language Models
-* Retrieval-Augmented Generation
-* Agentic AI & Multi-Agent Workflows
-* Prompt Engineering
-* Embeddings & Semantic Search
+* LLMs & Prompt Engineering
+* RAG Architectures
 * Vector Databases
-* Model Integration & Tool Calling
+* Agentic Workflows
+* MCP & Tool Calling
 
-### Machine Learning & Deep Learning
+</td>
+<td width="50%" valign="top">
+
+**02 / MACHINE LEARNING**
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square\&logo=pytorch\&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square\&logo=tensorflow\&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=flat-square\&logo=keras\&logoColor=white)
-![Scikit Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=flat-square\&logo=scikitlearn\&logoColor=white)
 
-* Neural Networks & CNNs
-* Transfer Learning
-* Knowledge Distillation
+* Deep Learning
+* CNN & Transfer Learning
 * Model Fine-Tuning
-* Model Evaluation & Optimization
+* Knowledge Distillation
+* Model Optimization
 
-### Computer Vision
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**03 / COMPUTER VISION**
 
 ![YOLO](https://img.shields.io/badge/YOLO-111F68?style=flat-square)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square\&logo=opencv\&logoColor=white)
-![PaddleOCR](https://img.shields.io/badge/PaddleOCR-0062B8?style=flat-square)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square\&logo=opencv)
 
-* Image Classification
 * Object Detection
+* Image Classification
 * Instance Segmentation
-* Face Liveness Detection
-* OCR & Document Intelligence
-* Human-Object Interaction
+* Face Liveness
+* OCR & Document AI
 * CLIP & Vision Transformers
 
-### Backend & Deployment
+</td>
+<td width="50%" valign="top">
 
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square\&logo=fastapi\&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square\&logo=django\&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square\&logo=streamlit\&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square\&logo=docker\&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square\&logo=amazonaws\&logoColor=white)
+**04 / BACKEND & DEPLOYMENT**
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square\&logo=fastapi)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square\&logo=django)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square\&logo=docker)
 
 * REST APIs
-* Model Serving
+* Streamlit
+* AWS
 * TensorFlow Lite
 * TorchScript
-* Application Deployment
-* Inference Optimization
+* SQL Server
 
-### Data & Development
-
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square\&logo=microsoftsqlserver\&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square\&logo=numpy\&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)
+</td>
+</tr>
+</table>
 
 ---
 
-## `05 / ACTIVE_ENGINEERING_DOMAINS`
+### ◈ PROJECT MONITOR
 
 <div align="center">
 
-| DOMAIN              | ENGINEERING DIRECTION                        |
-| :------------------ | :------------------------------------------- |
-| 🧠 Generative AI    | LLM-powered applications                     |
-| 🤖 Agentic AI       | Autonomous agents and orchestration          |
-| 🔍 RAG Systems      | Knowledge retrieval and contextual reasoning |
-| 👁️ Computer Vision | Detection, classification and segmentation   |
-| ⚙️ AI Engineering   | Deployment and inference optimization        |
-| 🔌 MCP              | AI tool connectivity and integrations        |
+**LIVE REPOSITORY EXPLORER**
+
+[![Repositories](https://img.shields.io/badge/Explore-Public_Repositories-00D9FF?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/YOUR_GITHUB_USERNAME?tab=repositories)
 
 </div>
 
+<details>
+<summary><b>◈ AI & GENERATIVE AI PROJECTS</b></summary>
+
+* AgentOps AI
+* LLM Applications
+* RAG Systems
+* Agentic AI Workflows
+* MCP Integrations
+
+</details>
+
+<details>
+<summary><b>◈ COMPUTER VISION PROJECTS</b></summary>
+
+* Crop Classification & Liveliness
+* Face Liveness Detection
+* Cow Muzzle Identification
+* Human-Object Interaction
+* OCR & Document Intelligence
+
+</details>
+
+<details>
+<summary><b>◈ ENGINEERING & DEPLOYMENT</b></summary>
+
+* Model Inference Pipelines
+* FastAPI / Django Applications
+* PyTorch & TFLite Deployment
+* Batch Inference & Analytics
+
+</details>
+
 ---
 
-## `06 / CONTRIBUTION_ACTIVITY`
+### ◈ CONTRIBUTION ACTIVITY
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Rajagopalhertzian&theme=tokyo-night&hide_border=true&area=true" width="100%" />
+<img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true&background=0D1117" width="70%"/>
 
 <br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=Rajagopalhertzian&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8" width="100%" />
+**Real-time contribution history is available on your GitHub profile.**
+
+[![Contribution Graph](https://img.shields.io/badge/View-Contribution_History-161B22?style=flat-square\&logo=github)](https://github.com/YOUR_GITHUB_USERNAME?tab=overview)
 
 </div>
 
 ---
-
-## `07 / CONNECT`
 
 <div align="center">
 
 ### BUILDING INTELLIGENCE. ENGINEERING THE FUTURE.
 
-Interested in Generative AI, Agentic Systems, AI Engineering, and building intelligent applications.
+`LLMs` · `AGENTS` · `RAG` · `COMPUTER VISION` · `AI SYSTEMS`
 
-<br/>
-
-[![Portfolio](https://img.shields.io/badge/EXPLORE_PORTFOLIO-00F7FF?style=for-the-badge\&logo=vercel\&logoColor=black)](https://portfolio-flame-ten-86.vercel.app/)
-
-[![LinkedIn](https://img.shields.io/badge/CONNECT_ON_LINKEDIN-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/raja-gopal-638bba201)
-
-<br/>
-
-```text
-PERCEIVE → REASON → PLAN → EXECUTE → EVOLVE
-```
-
-**Raja Gopal S | AI / ML Engineer**
+**RAJA GOPAL S**
 
 </div>
