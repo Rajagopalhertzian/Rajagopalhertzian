@@ -1,258 +1,121 @@
-name: AI Engineering Profile Tracker
+<div align="center">
 
-on:
-  schedule:
-    - cron: "0 */6 * * *"
+<img src="https://capsule-render.vercel.app/api?type=venom&height=230&text=RAJA%20GOPAL&fontSize=65&fontColor=00F7FF&animation=fadeIn&stroke=00F7FF&strokeWidth=1&desc=AI%20ENGINEER%20%7C%20GENERATIVE%20AI%20%7C%20AGENTIC%20SYSTEMS&descSize=15&descAlignY=72&color=0:090D18,50:101B35,100:090D18" width="100%"/>
 
-  workflow_dispatch:
+**Building Intelligent Systems · Engineering Autonomous AI**
 
-  push:
-    paths-ignore:
-      - "README.md"
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=15&duration=2500&pause=800&color=00F7FF&center=true&vCenter=true&width=650&lines=Generative+AI+%2F+Agentic+AI;LLMs+%2F+RAG+%2F+Multi-Agent+Systems;Computer+Vision+%2F+Deep+Learning;Research+%E2%86%92+Engineer+%E2%86%92+Deploy" />
 
-permissions:
-  contents: write
+[![Portfolio](https://img.shields.io/badge/Portfolio-Explore-00F7FF?style=flat-square\&logo=vercel\&logoColor=black)](https://portfolio-flame-ten-86.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square\&logo=linkedin)](https://www.linkedin.com/in/raja-gopal-638bba201)
+[![GitHub](https://img.shields.io/badge/GitHub-Projects-181717?style=flat-square\&logo=github)](https://github.com/YOUR_GITHUB_USERNAME)
 
-jobs:
-  update-profile:
-    runs-on: ubuntu-latest
+📍 India
 
-    steps:
-      - name: Checkout Profile
-        uses: actions/checkout@v4
+</div>
 
-      - name: Update Engineering Dashboard
-        uses: actions/github-script@v7
+---
 
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+### ◈ 01 / ENGINEERING IDENTITY
 
-          script: |
-            const fs = require('fs');
+<table>
+<tr>
+<td width="55%" valign="top">
 
-            const username = context.repo.owner;
-            const repo = context.repo.repo;
+**RAJA GOPAL S**
 
-            const repos = await github.paginate(
-              github.rest.repos.listForUser,
-              {
-                username,
-                type: 'owner',
-                per_page: 100,
-                sort: 'updated'
-              }
-            );
+Machine Learning Engineer · Avani
 
-            const ownRepos = repos.filter(
-              r => !r.fork && !r.archived
-            );
+I work on applied AI systems spanning computer vision, deep learning and intelligent applications.
 
-            const languages = new Map();
+My current engineering direction is Generative AI and Agentic AI — exploring systems that retrieve knowledge, reason over tasks, interact with tools and execute autonomous workflows.
 
-            const aiKeywords = [
-              'agentic', 'agent', 'agents',
-              'langchain', 'langgraph',
-              'autogen', 'crewai', 'mcp',
-              'generative-ai', 'genai',
-              'llm', 'rag', 'retrieval',
-              'vector-database', 'llama',
-              'openai', 'transformers'
-            ];
+</td>
+<td width="45%" valign="top">
 
-            const techSymbols = {
-              Python: '🐍',
-              JavaScript: '🟨',
-              TypeScript: '🔷',
-              Java: '☕',
-              C: '⚙️',
-              'C++': '⚙️',
-              Go: '🔵',
-              Rust: '🦀',
-              Jupyter: '📓',
-              HTML: '🌐',
-              CSS: '🎨',
-              Shell: '💻'
-            };
+```yaml
+ENGINEERING:
+  GenAI: LLMs, RAG
+  AgenticAI: Agents, MCP
+  Vision: YOLO, CLIP
+  DeepLearning: PyTorch
+  Deployment: APIs, TFLite
 
-            const techBadges = {
-              pytorch: 'PyTorch',
-              tensorflow: 'TensorFlow',
-              keras: 'Keras',
-              langchain: 'LangChain',
-              langgraph: 'LangGraph',
-              crewai: 'CrewAI',
-              autogen: 'AutoGen',
-              mcp: 'MCP',
-              yolo: 'YOLO',
-              opencv: 'OpenCV',
-              fastapi: 'FastAPI',
-              django: 'Django',
-              docker: 'Docker',
-              streamlit: 'Streamlit',
-              huggingface: 'Hugging Face',
-              transformers: 'Transformers',
-              chromadb: 'ChromaDB',
-              faiss: 'FAISS',
-              llamaindex: 'LlamaIndex'
-            };
+MINDSET:
+  Research
+  Architecture
+  Engineering
+  Deployment
+```
 
-            const aiProjects = [];
+</td>
+</tr>
+</table>
 
-            for (const r of ownRepos) {
+---
 
-              const metadata = [
-                r.name,
-                r.description || '',
-                ...(r.topics || [])
-              ].join(' ').toLowerCase();
+### ◈ 02 / LIVE SYSTEM TELEMETRY
 
-              const isAI = aiKeywords.some(
-                keyword => metadata.includes(keyword)
-              );
+<div align="center">
 
-              if (isAI) {
-                aiProjects.push(r);
-              }
+<img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=8B5CF6&text_color=C9D1D9&include_all_commits=true" width="49%"/><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&bg_color=0D1117&title_color=00F7FF&text_color=C9D1D9&langs_count=8" width="49%"/>
 
-              const langs = await github.rest.repos
-                .listLanguages({
-                  owner: username,
-                  repo: r.name
-                });
+</div>
 
-              for (const lang of Object.keys(langs.data)) {
-                languages.set(
-                  lang,
-                  (languages.get(lang) || 0) + 1
-                );
-              }
-            }
+---
 
-            const sortedLanguages = [...languages.entries()]
-              .sort((a, b) => b[1] - a[1]);
+### ◈ 03 / TECHNOLOGY INTELLIGENCE
 
-            const techRows = sortedLanguages.map(
-              ([name, count]) => {
-                const symbol = techSymbols[name] || '⚡';
+**LIVE DETECTED TECHNOLOGIES**
 
-                return `| **${name}** | ${symbol} | ${count} |`;
-              }
-            );
+<!-- TECH-STACK:START -->
 
-            const detectedTopics = new Set();
+| TECHNOLOGY                 | DETECTED SYMBOL | REPOSITORIES |
+| :------------------------- | :-------------: | -----------: |
+| Waiting for GitHub Actions |        ⚙️       |           -- |
 
-            for (const r of ownRepos) {
-              for (const topic of r.topics || []) {
-                const key = topic.toLowerCase();
+<!-- TECH-STACK:END -->
 
-                if (techBadges[key]) {
-                  detectedTopics.add(techBadges[key]);
-                }
-              }
-            }
+<sub>Automatically discovered from repository languages, topics and project metadata.</sub>
 
-            const topicBadges = [...detectedTopics]
-              .sort()
-              .map(name => {
-                const slug = name
-                  .toLowerCase()
-                  .replaceAll(' ', '-');
+---
 
-                return `![${name}](https://img.shields.io/badge/${encodeURIComponent(name)}-technology-334155?style=flat-square)`;
-              });
+### ◈ 04 / GENAI & AGENTIC AI MONITOR
 
-            const technologySection = [
-              ...techRows,
-              '',
-              topicBadges.join(' ')
-            ].join('\n');
+**ACTIVE AI ENGINEERING PROJECTS**
 
-            const aiRows = aiProjects
-              .sort((a, b) =>
-                new Date(b.pushed_at) - new Date(a.pushed_at)
-              )
-              .slice(0, 10)
-              .map(r => {
-                const date = r.pushed_at
-                  ? new Date(r.pushed_at)
-                      .toISOString().slice(0, 10)
-                  : 'N/A';
+<!-- AI-PROJECTS:START -->
 
-                const topics = (r.topics || [])
-                  .slice(0, 4)
-                  .join(', ');
+| PROJECT                  | TECHNOLOGY | LAST UPDATE |
+| :----------------------- | :--------- | :---------- |
+| Scanning repositories... | ⚙️         | Pending     |
 
-                const stack = topics || r.language || 'See repository';
+<!-- AI-PROJECTS:END -->
 
-                return `| [${r.name}](https://github.com/${username}/${r.name}) | ${stack} | ${date} |`;
-              });
+<sub>Automatically classified using repository descriptions, topics and technology metadata. Recently updated projects appear first.</sub>
 
-            const techContent = technologySection ||
-              '| No repositories detected | ⚙️ | 0 |';
+---
 
-            const aiContent = aiRows.length
-              ? aiRows.join('\n')
-              : '| No matching AI repositories yet | ⚙️ | -- |';
+### ◈ 05 / ENGINEERING ACTIVITY
 
-            const readmePath = 'README.md';
+<div align="center">
 
-            let readme = fs.readFileSync(
-              readmePath,
-              'utf8'
-            );
+<img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=dark&hide_border=true&background=0D1117&ring=00F7FF&fire=8B5CF6&currStreakLabel=00F7FF" width="75%"/>
 
-            function replaceSection(start, end, content) {
+<br/>
 
-              const pattern = new RegExp(
-                `<!-- ${start}:START -->[\\s\\S]*?<!-- ${start}:END -->`
-              );
+[![Contribution History](https://img.shields.io/badge/VIEW-GitHub_Contribution_History-161B22?style=for-the-badge\&logo=github)](https://github.com/YOUR_GITHUB_USERNAME?tab=overview)
 
-              if (!pattern.test(readme)) {
-                throw new Error(
-                  `Missing README markers: ${start}`
-                );
-              }
+</div>
 
-              readme = readme.replace(
-                pattern,
-                `<!-- ${start}:START -->\n${content}\n<!-- ${start}:END -->`
-              );
-            }
+---
 
-            replaceSection(
-              'TECH-STACK',
-              'TECH-STACK',
-              techContent
-            );
+<div align="center">
 
-            replaceSection(
-              'AI-PROJECTS',
-              'AI-PROJECTS',
-              aiContent
-            );
+### BUILDING THE NEXT GENERATION OF INTELLIGENT SYSTEMS.
 
-            fs.writeFileSync(readmePath, readme);
+`GENERATIVE AI`   ·   `AGENTIC AI`   ·   `COMPUTER VISION`
 
-            console.log(
-              `Repositories: ${ownRepos.length}`
-            );
+[![Portfolio](https://img.shields.io/badge/EXPLORE_MY_WORK-00F7FF?style=for-the-badge\&logo=vercel\&logoColor=black)](https://portfolio-flame-ten-86.vercel.app/)
 
-            console.log(
-              `AI projects: ${aiProjects.length}`
-            );
-
-            console.log(
-              `Languages detected: ${languages.size}`
-            );
-
-      - name: Commit Dashboard Updates
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add README.md
-
-          git diff --cached --quiet || (
-            git commit -m "Update live AI engineering dashboard"
-            git push
-          )
+</div>
