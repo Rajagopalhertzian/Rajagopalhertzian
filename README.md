@@ -8,7 +8,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Explore-00F7FF?style=flat-square\&logo=vercel\&logoColor=black)](https://portfolio-flame-ten-86.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square\&logo=linkedin)](https://www.linkedin.com/in/raja-gopal-638bba201)
-[![GitHub](https://img.shields.io/badge/GitHub-Projects-181717?style=flat-square\&logo=github)](https://github.com/YOUR_GITHUB_USERNAME)
+[![GitHub](https://img.shields.io/badge/GitHub-Projects-181717?style=flat-square\&logo=github)](https://github.com/)
 
 📍 India
 
@@ -58,7 +58,7 @@ MINDSET:
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=8B5CF6&text_color=C9D1D9&include_all_commits=true" width="49%"/><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&bg_color=0D1117&title_color=00F7FF&text_color=C9D1D9&langs_count=8" width="49%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=8B5CF6&text_color=C9D1D9&include_all_commits=true" width="49%"/><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=&layout=compact&hide_border=true&bg_color=0D1117&title_color=00F7FF&text_color=C9D1D9&langs_count=8" width="49%"/>
 
 </div>
 
@@ -100,11 +100,11 @@ MINDSET:
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=dark&hide_border=true&background=0D1117&ring=00F7FF&fire=8B5CF6&currStreakLabel=00F7FF" width="75%"/>
+<img src="https://streak-stats.demolab.com?user=&theme=dark&hide_border=true&background=0D1117&ring=00F7FF&fire=8B5CF6&currStreakLabel=00F7FF" width="75%"/>
 
 <br/>
 
-[![Contribution History](https://img.shields.io/badge/VIEW-GitHub_Contribution_History-161B22?style=for-the-badge\&logo=github)](https://github.com/YOUR_GITHUB_USERNAME?tab=overview)
+[![Contribution History](https://img.shields.io/badge/VIEW-GitHub_Contribution_History-161B22?style=for-the-badge\&logo=github)](https://github.com/?tab=overview)
 
 </div>
 
