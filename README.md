@@ -267,7 +267,15 @@ TECHNOLOGIES DETECTED ACROSS PUBLIC REPOSITORIES
 
 <!-- TECH-STACK:START -->
 
-Repository scan runs after the GitHub Actions workflow is enabled.
+#### PROGRAMMING LANGUAGES
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) **18 repos** &nbsp; ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-444444?style=for-the-badge) **13 repos** &nbsp; ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) **5 repos** &nbsp; ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white) **5 repos** &nbsp; ![Dockerfile](https://img.shields.io/badge/Dockerfile-444444?style=for-the-badge) **5 repos** &nbsp; ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) **4 repos** &nbsp; ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) **1 repos** &nbsp; ![PHP](https://img.shields.io/badge/PHP-444444?style=for-the-badge) **1 repos**
+
+#### AI / ML & ENGINEERING FRAMEWORKS
+
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) **8 repos** &nbsp; ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white) **4 repos** &nbsp; ![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=white) **3 repos** &nbsp; ![ChromaDB](https://img.shields.io/badge/ChromaDB-E85D75?style=for-the-badge&logo=database&logoColor=white) **3 repos** &nbsp; ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) **3 repos** &nbsp; ![MCP](https://img.shields.io/badge/MCP-8B5CF6?style=for-the-badge&logo=plug&logoColor=white) **2 repos** &nbsp; ![LangGraph](https://img.shields.io/badge/LangGraph-2563EB?style=for-the-badge&logo=workflow&logoColor=white) **2 repos** &nbsp; ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=database&logoColor=white) **2 repos** &nbsp; ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white) **2 repos** &nbsp; ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) **1 repos** &nbsp; ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white) **1 repos** &nbsp; ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white) **1 repos** &nbsp; ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) **1 repos** &nbsp; ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) **1 repos**
+
+_<sub>Scanned 33 public, non-fork repositories. Counts represent repositories containing each technology.</sub>_
 
 <!-- TECH-STACK:END -->
 
@@ -283,7 +291,20 @@ AUTOMATIC DISCOVERY OF AI ENGINEERING PROJECTS
 
 <!-- AI-PROJECTS:START -->
 
-The first repository scan will populate this section.
+| PROJECT | DETECTED TOPICS / KEYWORDS | LAST PUSH |
+|:---|:---|:---:|
+| [ragdoc-mcp](https://github.com/Rajagopalhertzian/ragdoc-mcp) | mcp · rag · retrieval | 2026-10-28 |
+| [production-agent-skills](https://github.com/Rajagopalhertzian/production-agent-skills) | agent | 2026-10-27 |
+| [ragdoc-mcp-v1](https://github.com/Rajagopalhertzian/ragdoc-mcp-v1) | mcp · rag · retrieval · llama | 2026-10-20 |
+| [voice_agent](https://github.com/Rajagopalhertzian/voice_agent) | agent | 2026-09-04 |
+| [Docling-RAGAS-RAG-pipeline-with-Streamlit-UI](https://github.com/Rajagopalhertzian/Docling-RAGAS-RAG-pipeline-with-Streamlit-UI) | langchain · rag · openai · transformers | 2026-08-27 |
+| [agent-starter-rag-eval](https://github.com/Rajagopalhertzian/agent-starter-rag-eval) | agent · langchain · langgraph · llm | 2026-08-15 |
+| [Multi-agent-RAG-system](https://github.com/Rajagopalhertzian/Multi-agent-RAG-system) | agent · langchain · langgraph · llm | 2026-06-09 |
+| [AICortex](https://github.com/Rajagopalhertzian/AICortex) | rag | 2026-05-20 |
+| [RAG](https://github.com/Rajagopalhertzian/RAG) | rag | 2026-04-28 |
+| [Rag_from_Scratch](https://github.com/Rajagopalhertzian/Rag_from_Scratch) | langchain · rag · retrieval · llama | 2026-03-03 |
+
+_<sub>10 matching public repositories detected; showing up to 12, sorted by latest push.</sub>_
 
 <!-- AI-PROJECTS:END -->
 
