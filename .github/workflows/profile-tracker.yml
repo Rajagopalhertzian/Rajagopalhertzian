@@ -1,0 +1,300 @@
+name: Update AI Engineering Profile
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "README.md"
+      - ".github/workflows/profile-tracker.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Scan repositories and update README
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const username = context.repo.owner;
+            const profileRepo = context.repo.repo;
+
+            const repos = await github.paginate(
+              github.rest.repos.listForUser,
+              {
+                username,
+                type: 'owner',
+                per_page: 100,
+                sort: 'updated'
+              }
+            );
+
+            const ownRepos = repos.filter(r =>
+              !r.fork &&
+              !r.archived &&
+              r.name.toLowerCase() !== profileRepo.toLowerCase()
+            );
+
+            const languageCounts = new Map();
+            const frameworkCounts = new Map();
+            const frameworkNames = {
+              pytorch: ['PyTorch', 'pytorch', 'EE4C2C'],
+              tensorflow: ['TensorFlow', 'tensorflow', 'FF6F00'],
+              keras: ['Keras', 'keras', 'D00000'],
+              langchain: ['LangChain', 'chainlink', '1C3C3C'],
+              langgraph: ['LangGraph', 'workflow', '2563EB'],
+              crewai: ['CrewAI', 'robot', '7C3AED'],
+              autogen: ['AutoGen', 'microsoft', '0078D4'],
+              mcp: ['MCP', 'plug', '8B5CF6'],
+              yolo: ['YOLO', 'eye', '111F68'],
+              opencv: ['OpenCV', 'opencv', '5C3EE8'],
+              fastapi: ['FastAPI', 'fastapi', '009688'],
+              django: ['Django', 'django', '092E20'],
+              docker: ['Docker', 'docker', '2496ED'],
+              streamlit: ['Streamlit', 'streamlit', 'FF4B4B'],
+              huggingface: ['Hugging Face', 'huggingface', 'FFD21E'],
+              transformers: ['Transformers', 'huggingface', 'FFD21E'],
+              chromadb: ['ChromaDB', 'database', 'E85D75'],
+              faiss: ['FAISS', 'database', '0467DF'],
+              llamaindex: ['LlamaIndex', 'book', '8B5CF6'],
+              openai: ['OpenAI', 'openai', '412991'],
+              ollama: ['Ollama', 'cpu', '111111'],
+              qdrant: ['Qdrant', 'database', 'DC244C'],
+              pinecone: ['Pinecone', 'database', '00A98F'],
+              streamlit: ['Streamlit', 'streamlit', 'FF4B4B']
+            };
+
+            const languageLogos = {
+              Python: ['python', '3776AB'],
+              JavaScript: ['javascript', 'F7DF1E'],
+              TypeScript: ['typescript', '3178C6'],
+              Java: ['java', 'ED8B00'],
+              Go: ['go', '00ADD8'],
+              Rust: ['rust', '000000'],
+              'C++': ['cplusplus', '00599C'],
+              C: ['c', 'A8B9CC'],
+              HTML: ['html5', 'E34F26'],
+              CSS: ['css3', '1572B6'],
+              Shell: ['gnubash', '4EAA25'],
+              Jupyter: ['jupyter', 'F37626']
+            };
+
+            const aiKeywords = [
+              'agentic', 'agent', 'agents', 'langchain',
+              'langgraph', 'crewai', 'autogen', 'mcp',
+              'generative-ai', 'genai', 'llm', 'rag',
+              'retrieval', 'vector-database', 'llama',
+              'openai', 'transformers', 'ollama',
+              'multi-agent', 'ai-agent'
+            ];
+
+            const manifestNames = [
+              'requirements.txt',
+              'pyproject.toml',
+              'Pipfile',
+              'package.json',
+              'environment.yml'
+            ];
+
+            const aiProjects = [];
+
+            for (const repo of ownRepos) {
+              const [languageResult, topicResult] = await Promise.all([
+                github.rest.repos.listLanguages({
+                  owner: username,
+                  repo: repo.name
+                }),
+                github.rest.repos.getAllTopics({
+                  owner: username,
+                  repo: repo.name
+                })
+              ]);
+
+              for (const language of Object.keys(languageResult.data)) {
+                languageCounts.set(
+                  language,
+                  (languageCounts.get(language) || 0) + 1
+                );
+              }
+
+              let topics = topicResult.data.names || [];
+              let manifestText = '';
+
+              try {
+                const root = await github.rest.repos.getContent({
+                  owner: username,
+                  repo: repo.name,
+                  path: ''
+                });
+
+                const files = root.data
+                  .filter(item => item.type === 'file')
+                  .map(item => item.name.toLowerCase());
+
+                const selected = manifestNames.filter(name =>
+                  files.includes(name.toLowerCase())
+                ).slice(0, 3);
+
+                for (const file of selected) {
+                  try {
+                    const response = await github.rest.repos.getContent({
+                      owner: username,
+                      repo: repo.name,
+                      path: file
+                    });
+
+                    if (response.data.content) {
+                      manifestText += Buffer.from(
+                        response.data.content,
+                        'base64'
+                      ).toString('utf8').toLowerCase() + '\n';
+                    }
+                  } catch (e) {
+                    core.info(`Could not read ${file} in ${repo.name}`);
+                  }
+                }
+              } catch (e) {
+                core.info(`Could not inspect root files for ${repo.name}`);
+              }
+
+              const searchable = [
+                repo.name,
+                repo.description || '',
+                ...topics,
+                manifestText
+              ].join(' ').toLowerCase();
+
+              for (const [key, details] of Object.entries(frameworkNames)) {
+                if (searchable.includes(key)) {
+                  frameworkCounts.set(
+                    key,
+                    (frameworkCounts.get(key) || 0) + 1
+                  );
+                }
+              }
+
+              const matchedKeywords = aiKeywords.filter(keyword =>
+                searchable.includes(keyword)
+              );
+
+              if (matchedKeywords.length > 0) {
+                aiProjects.push({
+                  repo,
+                  topics,
+                  matchedKeywords
+                });
+              }
+            }
+
+            const badge = (label, logo, color) =>
+              `![${label}](https://img.shields.io/badge/${encodeURIComponent(label)}-${color}?style=for-the-badge&logo=${logo}&logoColor=white)`;
+
+            const sortedLanguages = [...languageCounts.entries()]
+              .sort((a, b) => b[1] - a[1]);
+
+            const languageBadges = sortedLanguages.map(([name, count]) => {
+              const details = languageLogos[name];
+              if (!details) {
+                return `![${name}](https://img.shields.io/badge/${encodeURIComponent(name)}-444444?style=for-the-badge) **${count} repos**`;
+              }
+
+              return `${badge(name, details[0], details[1])} **${count} repos**`;
+            });
+
+            const frameworkBadges = [...frameworkCounts.entries()]
+              .sort((a, b) => b[1] - a[1])
+              .map(([key, count]) => {
+                const [name, logo, color] = frameworkNames[key];
+                return `${badge(name, logo, color)} **${count} repos**`;
+              });
+
+            const techContent = [
+              '#### PROGRAMMING LANGUAGES',
+              '',
+              languageBadges.length
+                ? languageBadges.join(' &nbsp; ')
+                : '_No language data found yet._',
+              '',
+              '#### AI / ML & ENGINEERING FRAMEWORKS',
+              '',
+              frameworkBadges.length
+                ? frameworkBadges.join(' &nbsp; ')
+                : '_No framework topics or dependencies detected yet._',
+              '',
+              `_<sub>Scanned ${ownRepos.length} public, non-fork repositories. Counts represent repositories containing each technology.</sub>_`
+            ].join('\n');
+
+            aiProjects.sort((a, b) =>
+              new Date(b.repo.pushed_at) - new Date(a.repo.pushed_at)
+            );
+
+            const projectRows = aiProjects.slice(0, 12).map(({repo, topics, matchedKeywords}) => {
+              const date = repo.pushed_at
+                ? new Date(repo.pushed_at).toISOString().slice(0, 10)
+                : '—';
+
+              const stack = topics.length
+                ? topics.slice(0, 4).join(' · ')
+                : matchedKeywords.slice(0, 4).join(' · ');
+
+              return `| [${repo.name}](https://github.com/${username}/${repo.name}) | ${stack} | ${date} |`;
+            });
+
+            const aiContent = [
+              '| PROJECT | DETECTED TOPICS / KEYWORDS | LAST PUSH |',
+              '|:---|:---|:---:|',
+              ...(projectRows.length
+                ? projectRows
+                : ['| No matching public AI repositories detected yet | Add relevant repository topics | — |']),
+              '',
+              `_<sub>${aiProjects.length} matching public repositories detected; showing up to 12, sorted by latest push.</sub>_`
+            ].join('\n');
+
+            let readme = fs.readFileSync('README.md', 'utf8');
+
+            function replaceBlock(name, content) {
+              const start = `<!-- ${name}:START -->`;
+              const end = `<!-- ${name}:END -->`;
+              const startIndex = readme.indexOf(start);
+              const endIndex = readme.indexOf(end);
+
+              if (startIndex === -1 || endIndex === -1 || endIndex < startIndex) {
+                throw new Error(`Missing or invalid README markers for ${name}`);
+              }
+
+              readme =
+                readme.slice(0, startIndex + start.length) +
+                '\n\n' + content + '\n\n' +
+                readme.slice(endIndex);
+            }
+
+            replaceBlock('TECH-STACK', techContent);
+            replaceBlock('AI-PROJECTS', aiContent);
+
+            fs.writeFileSync('README.md', readme);
+
+            core.info(`Scanned ${ownRepos.length} repositories.`);
+            core.info(`Detected ${languageCounts.size} programming languages.`);
+            core.info(`Detected ${frameworkCounts.size} frameworks.`);
+            core.info(`Found ${aiProjects.length} AI-related repositories.`);
+
+      - name: Commit README changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || (
+            git commit -m "Update live technology radar and AI project monitor"
+            git push
+          )
