@@ -116,27 +116,27 @@ My focus is on **systems that go beyond generating responses** — systems capab
 
 ## ⚙️ The Agentic Execution Loop
 
-<div align="center">
+#<div align="center">
 
-```mermaid
-graph TD
-    A[👤 USER REQUEST] --> B[🧠 AI ORCHESTRATOR<br/>LangGraph State Machine]
-    B --> C[🎯 REASON & PLAN<br/>Chain-of-Thought + Tool Selection]
-    C --> D[🤖 SPECIALIZED AGENTS]
-    D --> E1[🔌 MCP SERVERS<br/>File System / GitHub / DB]
-    D --> E2[🛠️ TOOL CALLING<br/>API / Functions / Code Exec]
-    D --> E3[📚 KNOWLEDGE BASE<br/>RAG / Vector Search]
-    E1 --> F[💾 MEMORY & CONTEXT<br/>Short-term + Long-term]
-    E2 --> F
-    E3 --> F
-    F --> G[✨ INTELLIGENT OUTPUT<br/>Structured Response / Action]
-    G --> H[📊 OBSERVABILITY<br/>LangSmith / Langfuse / Custom]
-    H -.-> B
-```
+#```mermaid
+#graph TD
+#    A[👤 USER REQUEST] --> B[🧠 AI ORCHESTRATOR<br/>LangGraph State Machine]
+ #   B --> C[🎯 REASON & PLAN<br/>Chain-of-Thought + Tool Selection]
+ #   C --> D[🤖 SPECIALIZED AGENTS]
+  #  D --> E1[🔌 MCP SERVERS<br/>File System / GitHub / DB]
+   # D --> E2[🛠️ TOOL CALLING<br/>API / Functions / Code Exec]
+#    D --> E3[📚 KNOWLEDGE BASE<br/>RAG / Vector Search]
+ #   E1 --> F[💾 MEMORY & CONTEXT<br/>Short-term + Long-term]
+  #  E2 --> F
+   # E3 --> F
+    #F --> G[✨ INTELLIGENT OUTPUT<br/>Structured Response / Action]
+   # G --> H[📊 OBSERVABILITY<br/>LangSmith / Langfuse / Custom]
+    #H -.-> B
+#```
 
-**Perceive → Reason → Plan → Execute → Observe → Evolve**
+#**Perceive → Reason → Plan → Execute → Observe → Evolve**
 
-</div>
+#</div>
 
 ---
 
