@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=RAJA%20GOPAL%20S&fontSize=55&fontColor=00F0FF&fontAlignY=38&desc=GEN%20AI%20ENGINEER%20%7C%20AGENTIC%20AI%20ARCHITECT%20%7C%20ML%20ENGINEER&descSize=18&descAlignY=62&color=0:080D1B,30:0D1B2A,60:111C35,100:080D1B" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=RAJA%20GOPAL%20S&fontSize=55&fontColor=00F0FF&fontAlignY=38&desc=GEN%20AI%20ENGINEER%20%7C%20AGENTIC%20AI%20%7C%20ML%20ENGINEER&descSize=18&descAlignY=62&color=0:080D1B,30:0D1B2A,60:111C35,100:080D1B" width="100%"/>
 
 **Building Intelligent Systems. Engineering Autonomous AI.**
 
@@ -10,8 +10,8 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rajagopals)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rajagopalhertzian)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rajagopals.ai@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://rajagopalhertzian.github.io)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rajagopal120021@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-flame-ten-86.vercel.app/)
 
 </div>
 
@@ -113,33 +113,6 @@ My focus is on **systems that go beyond generating responses** — systems capab
 </div>
 
 ---
-
-## ⚙️ The Agentic Execution Loop
-
-#<div align="center">
-
-#```mermaid
-#graph TD
-#    A[👤 USER REQUEST] --> B[🧠 AI ORCHESTRATOR<br/>LangGraph State Machine]
- #   B --> C[🎯 REASON & PLAN<br/>Chain-of-Thought + Tool Selection]
- #   C --> D[🤖 SPECIALIZED AGENTS]
-  #  D --> E1[🔌 MCP SERVERS<br/>File System / GitHub / DB]
-   # D --> E2[🛠️ TOOL CALLING<br/>API / Functions / Code Exec]
-#    D --> E3[📚 KNOWLEDGE BASE<br/>RAG / Vector Search]
- #   E1 --> F[💾 MEMORY & CONTEXT<br/>Short-term + Long-term]
-  #  E2 --> F
-   # E3 --> F
-    #F --> G[✨ INTELLIGENT OUTPUT<br/>Structured Response / Action]
-   # G --> H[📊 OBSERVABILITY<br/>LangSmith / Langfuse / Custom]
-    #H -.-> B
-#```
-
-#**Perceive → Reason → Plan → Execute → Observe → Evolve**
-
-#</div>
-
----
-
 ## 🚀 Featured Gen AI & Agentic AI Projects
 
 <table>
