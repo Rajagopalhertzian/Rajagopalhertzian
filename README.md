@@ -205,7 +205,7 @@ My focus is on **systems that go beyond generating responses** — systems capab
 
 ---
 
-## 📈 Live Technology Radar
+## 📈 Live Technology Stack
 
 <div align="center">
 
@@ -229,7 +229,7 @@ _<sub>Scanned 37 public, non-fork repositories. Counts represent repositories co
 
 ---
 
-## 🤖 Gen AI & Agentic AI Project Monitor
+## 🤖 Gen AI & Agentic AI Projects
 
 <div align="center">
 
